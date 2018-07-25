@@ -3,6 +3,8 @@
     <string name="app_name">Book Store v2</string>
     <!-- Label for overflow menu option that inserts fake book data into the app [CHAR LIMIT=20] -->
     <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <!-- Label for overflow menu option that calls the supplier with an intent [CHAR LIMIT=20] -->
+    <string name="action_call_supplier">Call supplier</string>
     <!-- Label for overflow menu option that deletes all book data in the app [CHAR LIMIT=20] -->
     <string name="action_delete_all_entries">Delete All Stock</string>
     <!-- Label for Sell Button on list_item view -->
@@ -33,5 +35,9 @@
     <string name="action_save">Save</string>
     <!-- Label for editor overflow menu option that deletes the current book [CHAR LIMIT=20] -->
     <string name="action_delete">Delete</string>
+    <!-- Title text for the empty view, which describes the empty library image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">Your inventory is empty</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a book [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a book</string>
 
 </resources>

@@ -1,6 +1,5 @@
 package com.example.android.bookstore2;
 
-
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.support.design.widget.FloatingActionButton;
 
 import com.example.android.bookstore2.data.BookDbHelper;
 import com.example.android.bookstore2.data.BookContract.BookEntry;
