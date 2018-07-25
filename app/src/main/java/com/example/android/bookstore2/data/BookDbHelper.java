@@ -14,7 +14,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
             BookEntry.COLUMN_PRODUCT_PRICE + " INTEGER NOT NULL DEFAULT 0, " +
             BookEntry.COLUMN_PRODUCT_QUANTITY + " INTEGER NOT NULL DEFAULT 0, " +
             BookEntry.COLUMN_SUPPLIER_NAME + " TEXT, " +
-            BookEntry.COLUMN_SUPPLIER_PHONE + " TEXT" +
+            BookEntry.COLUMN_SUPPLIER_PHONE + " INTEGER" +
             ");";
 
     // Database Version. If you change the database schema, you must increment the database version.
@@ -22,7 +22,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
     /* Database Name */
     private static final String DATABASE_NAME = "bookstore.db";
     // DELETE ENTRIES
-    private static final String SQL_DELETE_ENTRIES = "";
+    private static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + BookEntry.TABLE_NAME;
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_CREATE_BOOKS_TABLE);

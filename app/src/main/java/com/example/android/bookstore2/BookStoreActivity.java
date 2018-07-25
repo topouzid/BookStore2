@@ -98,7 +98,7 @@ public class BookStoreActivity extends AppCompatActivity {
         values.put(BookEntry.COLUMN_PRODUCT_PRICE, 999);
         values.put(BookEntry.COLUMN_PRODUCT_QUANTITY, 9);
         values.put(BookEntry.COLUMN_SUPPLIER_NAME, "Supplier Name Test");
-        values.put(BookEntry.COLUMN_SUPPLIER_PHONE, "Phone number test");
+        values.put(BookEntry.COLUMN_SUPPLIER_PHONE, 99999);
 
         long newRowId = db.insert(BookEntry.TABLE_NAME, null, values);
 
