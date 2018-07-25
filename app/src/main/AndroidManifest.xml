@@ -16,7 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EditorActivity"></activity>
+        <activity
+            android:name=".EditorActivity"
+            android:theme="@style/EditorTheme"
+            android:parentActivityName=".BookStoreActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BookStoreActivity" />
+        </activity>
+        <provider
+            android:authorities="com.example.android.bookstore2"
+            android:name=".data.BookProvider"
+            android:exported="false"/>
     </application>
 
 </manifest>
