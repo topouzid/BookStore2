@@ -144,7 +144,7 @@ public class BookProvider extends ContentProvider {
         }
 
         // Check that the price is not less than 0
-        int price = values.getAsInteger(BookEntry.COLUMN_PRODUCT_PRICE);
+        float price = values.getAsFloat(BookEntry.COLUMN_PRODUCT_PRICE);
         if (price < 0) {
             throw new IllegalArgumentException("Book requires valid price");
         }
@@ -156,7 +156,7 @@ public class BookProvider extends ContentProvider {
         }
 
         //Check the phone number
-        int phone = values.getAsInteger(BookEntry.COLUMN_SUPPLIER_PHONE);
+        Long phone = values.getAsLong(BookEntry.COLUMN_SUPPLIER_PHONE);
         if (phone < 0) {
             throw new IllegalArgumentException("Phone requires a valid number");
         }
@@ -251,7 +251,7 @@ public class BookProvider extends ContentProvider {
         // If the {@link BookEntry#COLUMN_PRODUCT_PRICE} key is present,
         // check that the price value is valid.
         if (values.containsKey(BookEntry.COLUMN_PRODUCT_PRICE)) {
-            Integer price = values.getAsInteger(BookEntry.COLUMN_PRODUCT_PRICE);
+            Float price = values.getAsFloat(BookEntry.COLUMN_PRODUCT_PRICE);
             if (price == null || price < 0) {
                 throw new IllegalArgumentException("Book requires valid price");
             }
@@ -269,7 +269,7 @@ public class BookProvider extends ContentProvider {
         // If the {@link BookEntry#COLUMN_PRODUCT_QUANTITY} key is present,
         // check that the phone value is valid.
         if (values.containsKey(BookEntry.COLUMN_SUPPLIER_PHONE)) {
-            Integer phone = values.getAsInteger(BookEntry.COLUMN_SUPPLIER_PHONE);
+            Long phone = values.getAsLong(BookEntry.COLUMN_SUPPLIER_PHONE);
             if (phone < 0) {
                 throw new IllegalArgumentException("Book supplier requires valid phone value");
             }

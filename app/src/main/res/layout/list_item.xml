@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of books -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Layout for a single list item in the list of books -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/activity_margin">
+    android:padding="@dimen/activity_margin"
+    android:id="@+id/item_view">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,6 +37,7 @@
                 android:textColor="#AEB6BD"
                 tools:text="RRP: $19.00 - 3 in stock" />
         </LinearLayout>
+
         <Button
             android:id="@+id/sell"
             android:layout_width="wrap_content"
@@ -42,5 +46,4 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/activity_margin"/>
     </LinearLayout>
-
 </RelativeLayout>
